@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SmashMobile_v3.xcodeproj">
+      location = "group:../smashfly-style">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

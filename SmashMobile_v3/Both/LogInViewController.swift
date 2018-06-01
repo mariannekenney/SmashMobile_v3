@@ -10,19 +10,34 @@ import UIKit
 
 class LogInViewController: UIViewController {
     
+    @IBOutlet weak var logo: UIWebView!
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     @IBAction func logIn(_ sender: Any) {
-        var storyboard = UIStoryboard(name: "HiringManager", bundle: nil)
-        if (email.text?.lowercased() == "recruiter") {
-            storyboard = UIStoryboard(name: "Recruiter", bundle: nil)
+        var storyboard = UIStoryboard(name: "Recruiter", bundle: nil)
+        if (isHiringManager()) {
+            storyboard = UIStoryboard(name: "HiringManager", bundle: nil)
         }
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as UIViewController
         present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func forgotPassword(_ sender: Any) {
+        
+    }
+    
+    func isHiringManager() -> Bool {
+        if (email.text?.lowercased() == "recruiter") {
+            return false
+        }
+        return true
     }
     
 }

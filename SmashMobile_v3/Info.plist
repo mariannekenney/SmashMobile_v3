@@ -24,6 +24,22 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>sourcesanspro-normal.woff</string>
+		<string>SourceSansPro-SemiboldItalic.tff</string>
+		<string>SourceSansPro-Semibold.tff</string>
+		<string>SourceSansPro-Regular.tff</string>
+		<string>SourceSansPro-LightItalic.tff</string>
+		<string>SourceSansPro-Light.tff</string>
+		<string>SourceSansPro-Italic.tff</string>
+		<string>SourceSansPro-ExtraLightItalic.tff</string>
+		<string>SourceSansPro-ExtraLight.tff</string>
+		<string>SourceSansPro-Black.tff</string>
+		<string>SourceSansPro-BlackItalic.tff</string>
+		<string>SourceSansPro-Bold.tff</string>
+		<string>SourceSansPro-BoldItalic.tff</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
