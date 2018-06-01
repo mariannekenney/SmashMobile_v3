@@ -28,7 +28,6 @@
 		05CB208520C1B86C00113B34 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207920C1B86B00113B34 /* SourceSansPro-Semibold.ttf */; };
 		05CB208620C1B86C00113B34 /* SourceSansPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207A20C1B86B00113B34 /* SourceSansPro-ExtraLightItalic.ttf */; };
 		05CB208720C1B86C00113B34 /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207B20C1B86C00113B34 /* SourceSansPro-SemiboldItalic.ttf */; };
-		05CB208B20C1BB3200113B34 /* smashfly-style in Resources */ = {isa = PBXBuildFile; fileRef = 05CB208A20C1BB3200113B34 /* smashfly-style */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +75,6 @@
 		05CB207920C1B86B00113B34 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Semibold.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
 		05CB207A20C1B86B00113B34 /* SourceSansPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLightItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		05CB207B20C1B86C00113B34 /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiboldItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		05CB208A20C1BB3200113B34 /* smashfly-style */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "smashfly-style"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 		0575A2D620C1A1BB0084D77A = {
 			isa = PBXGroup;
 			children = (
-				05CB208A20C1BB3200113B34 /* smashfly-style */,
 				0575A2E120C1A1BB0084D77A /* SmashMobile_v3 */,
 				0575A2F620C1A1BD0084D77A /* SmashMobile_v3Tests */,
 				0575A30120C1A1BD0084D77A /* SmashMobile_v3UITests */,
@@ -321,7 +318,6 @@
 				05CB207F20C1B86C00113B34 /* SourceSansPro-Black.ttf in Resources */,
 				05CB208120C1B86C00113B34 /* SourceSansPro-Bold.ttf in Resources */,
 				05CB208220C1B86C00113B34 /* SourceSansPro-Italic.ttf in Resources */,
-				05CB208B20C1BB3200113B34 /* smashfly-style in Resources */,
 				05CB207C20C1B86C00113B34 /* SourceSansPro-LightItalic.ttf in Resources */,
 				05CB208520C1B86C00113B34 /* SourceSansPro-Semibold.ttf in Resources */,
 			);

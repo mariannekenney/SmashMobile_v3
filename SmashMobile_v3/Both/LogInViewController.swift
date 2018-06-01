@@ -10,14 +10,11 @@ import UIKit
 
 class LogInViewController: UIViewController {
     
-    @IBOutlet weak var logo: UIWebView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     @IBAction func logIn(_ sender: Any) {
