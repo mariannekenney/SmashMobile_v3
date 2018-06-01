@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0529B23420C1A3C200E2DEA7 /* Recruiter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B23320C1A3C200E2DEA7 /* Recruiter.storyboard */; };
+		0529B23620C1A3CC00E2DEA7 /* HiringManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B23520C1A3CC00E2DEA7 /* HiringManager.storyboard */; };
 		0575A2E320C1A1BB0084D77A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A2E220C1A1BB0084D77A /* AppDelegate.swift */; };
-		0575A2E520C1A1BB0084D77A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A2E420C1A1BB0084D77A /* ViewController.swift */; };
 		0575A2E820C1A1BB0084D77A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0575A2E620C1A1BB0084D77A /* Main.storyboard */; };
 		0575A2EA20C1A1BD0084D77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0575A2E920C1A1BD0084D77A /* Assets.xcassets */; };
 		0575A2ED20C1A1BD0084D77A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0575A2EB20C1A1BD0084D77A /* LaunchScreen.storyboard */; };
 		0575A2F820C1A1BD0084D77A /* SmashMobile_v3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A2F720C1A1BD0084D77A /* SmashMobile_v3Tests.swift */; };
 		0575A30320C1A1BD0084D77A /* SmashMobile_v3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A30220C1A1BD0084D77A /* SmashMobile_v3UITests.swift */; };
+		0575A31320C1A2210084D77A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A31220C1A2210084D77A /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0529B23320C1A3C200E2DEA7 /* Recruiter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruiter.storyboard; sourceTree = "<group>"; };
+		0529B23520C1A3CC00E2DEA7 /* HiringManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HiringManager.storyboard; sourceTree = "<group>"; };
 		0575A2DF20C1A1BB0084D77A /* SmashMobile_v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashMobile_v3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0575A2E220C1A1BB0084D77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0575A2E420C1A1BB0084D77A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0575A2E720C1A1BB0084D77A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0575A2E920C1A1BD0084D77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0575A2EC20C1A1BD0084D77A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		0575A2FE20C1A1BD0084D77A /* SmashMobile_v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashMobile_v3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0575A30220C1A1BD0084D77A /* SmashMobile_v3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashMobile_v3UITests.swift; sourceTree = "<group>"; };
 		0575A30420C1A1BD0084D77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0575A31220C1A2210084D77A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				0575A2E220C1A1BB0084D77A /* AppDelegate.swift */,
-				0575A2E420C1A1BB0084D77A /* ViewController.swift */,
-				0575A2E620C1A1BB0084D77A /* Main.storyboard */,
 				0575A2E920C1A1BD0084D77A /* Assets.xcassets */,
-				0575A2EB20C1A1BD0084D77A /* LaunchScreen.storyboard */,
 				0575A2EE20C1A1BD0084D77A /* Info.plist */,
+				0575A31420C1A2250084D77A /* Both */,
+				0575A31120C1A1D80084D77A /* Recruiter */,
+				0575A31020C1A1D00084D77A /* HiringManager */,
 			);
 			path = SmashMobile_v3;
 			sourceTree = "<group>";
@@ -123,6 +127,32 @@
 				0575A30420C1A1BD0084D77A /* Info.plist */,
 			);
 			path = SmashMobile_v3UITests;
+			sourceTree = "<group>";
+		};
+		0575A31020C1A1D00084D77A /* HiringManager */ = {
+			isa = PBXGroup;
+			children = (
+				0529B23520C1A3CC00E2DEA7 /* HiringManager.storyboard */,
+			);
+			path = HiringManager;
+			sourceTree = "<group>";
+		};
+		0575A31120C1A1D80084D77A /* Recruiter */ = {
+			isa = PBXGroup;
+			children = (
+				0529B23320C1A3C200E2DEA7 /* Recruiter.storyboard */,
+			);
+			path = Recruiter;
+			sourceTree = "<group>";
+		};
+		0575A31420C1A2250084D77A /* Both */ = {
+			isa = PBXGroup;
+			children = (
+				0575A2E620C1A1BB0084D77A /* Main.storyboard */,
+				0575A2EB20C1A1BD0084D77A /* LaunchScreen.storyboard */,
+				0575A31220C1A2210084D77A /* LogInViewController.swift */,
+			);
+			path = Both;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0529B23420C1A3C200E2DEA7 /* Recruiter.storyboard in Resources */,
 				0575A2ED20C1A1BD0084D77A /* LaunchScreen.storyboard in Resources */,
+				0529B23620C1A3CC00E2DEA7 /* HiringManager.storyboard in Resources */,
 				0575A2EA20C1A1BD0084D77A /* Assets.xcassets in Resources */,
 				0575A2E820C1A1BB0084D77A /* Main.storyboard in Resources */,
 			);
@@ -256,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0575A2E520C1A1BB0084D77A /* ViewController.swift in Sources */,
+				0575A31320C1A2210084D77A /* LogInViewController.swift in Sources */,
 				0575A2E320C1A1BB0084D77A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8QVQM8CG8;
 				INFOPLIST_FILE = SmashMobile_v3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8QVQM8CG8;
 				INFOPLIST_FILE = SmashMobile_v3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
