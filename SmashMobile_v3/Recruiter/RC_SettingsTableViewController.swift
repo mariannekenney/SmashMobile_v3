@@ -1,5 +1,5 @@
 //
-//  HM_SettingsTableViewController.swift
+//  RC_SettingsTableViewController.swift
 //  SmashMobile_v3
 //
 //  Created by Marianne Kenney on 6/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HM_SettingsTableViewController: UITableViewController {
+class RC_SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,12 @@ class HM_SettingsTableViewController: UITableViewController {
     
     //NavigationItems
     @IBAction func donePressed(_ sender: Any) {
-        settings()
+        done()
     }
     
-    func settings() {
+    func done() {
         self.dismiss(animated: true, completion: nil)
     }
     
 }
+

@@ -1,5 +1,5 @@
 //
-//  HM_JobsTableViewController.swift
+//  RC_JobsTableViewController.swift
 //  SmashMobile_v3
 //
 //  Created by Marianne Kenney on 6/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
+class RC_JobsTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     

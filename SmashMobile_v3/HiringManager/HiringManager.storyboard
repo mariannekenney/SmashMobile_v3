@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DATA FACT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="API-0a-gL9">
-                                <rect key="frame" x="16" y="164" width="343" height="82"/>
+                                <rect key="frame" x="16" y="177" width="343" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.70980392160000005" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
@@ -39,7 +39,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIRING MANAGER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zea-aj-yf0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIRING MANAGER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zea-aj-yf0">
                                 <rect key="frame" x="16" y="470" width="343" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="41"/>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DATA FACT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-pf-S5S">
-                                <rect key="frame" x="16" y="74" width="343" height="82"/>
+                                <rect key="frame" x="16" y="87" width="343" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74509803919999995" green="0.83529411760000005" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
@@ -61,6 +61,9 @@
                     <navigationItem key="navigationItem" title="Home" id="Xvr-o4-XAZ">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="3LY-1V-MSu">
                             <color key="tintColor" red="0.0" green="0.46666666666666667" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="fMH-iI-VTp" id="w3l-DD-EoI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -76,12 +79,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="mhl-0h-qPg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobCells" id="e1r-tC-KjZ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="jobsCell" id="e1r-tC-KjZ">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1r-tC-KjZ" id="zhF-Bp-DzZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -93,7 +101,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Jobs" id="kyp-GS-V9q"/>
                     <connections>
-                        <segue destination="ZM0-dI-SAO" kind="presentation" identifier="jobsToJob" id="j90-G4-ERY"/>
+                        <outlet property="searchBar" destination="mhl-0h-qPg" id="nTn-Y9-Ac5"/>
+                        <segue destination="ZM0-dI-SAO" kind="show" identifier="jobsToJob" id="j90-G4-ERY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pa-eU-i3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,12 +117,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Nnv-Kl-fUx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gnm-26-kkp">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="jobCell" id="Gnm-26-kkp">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gnm-26-kkp" id="Hls-65-sYZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -126,12 +140,19 @@
                     <navigationItem key="navigationItem" title="(job)" id="kTj-hl-XA6">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="cmn-Gh-ojV">
                             <color key="tintColor" red="0.10196078431372549" green="0.47450980392156861" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backPressed:" destination="jdS-Rg-D3k" id="4HB-fU-l3L"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="gear" id="cGl-zc-pi0">
                             <color key="tintColor" red="0.0" green="0.46666666666666667" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="settingsPressed:" destination="jdS-Rg-D3k" id="WNr-rm-mYJ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="Nnv-Kl-fUx" id="uzA-2F-aHm"/>
                         <segue destination="gif-le-EUB" kind="presentation" identifier="jobToSettings" id="k9y-mw-GnO"/>
                         <segue destination="JDI-Rw-Cn5" kind="presentation" identifier="jobToIndividual" id="B0A-xL-sGi"/>
                     </connections>
@@ -148,12 +169,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="jvg-cB-puk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kcN-XY-mdd">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="statusCell" id="kcN-XY-mdd">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kcN-XY-mdd" id="FuA-Y3-uWM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -165,6 +191,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Status" id="TSg-Dg-d2i"/>
                     <connections>
+                        <outlet property="searchBar" destination="jvg-cB-puk" id="jek-SU-ST3"/>
                         <segue destination="JDI-Rw-Cn5" kind="presentation" identifier="statusToIndividual" id="tAU-aA-icl"/>
                     </connections>
                 </tableViewController>
@@ -180,12 +207,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="SgQ-cs-jA9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uWa-QS-6dv">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myListCell" id="uWa-QS-6dv">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uWa-QS-6dv" id="ZfX-fj-RM5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -197,6 +229,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My List" id="8Gl-e6-Pf9"/>
                     <connections>
+                        <outlet property="searchBar" destination="SgQ-cs-jA9" id="CHM-G8-39v"/>
                         <segue destination="JDI-Rw-Cn5" kind="presentation" identifier="myListToIndividual" id="Sry-a3-pGF"/>
                     </connections>
                 </tableViewController>
@@ -213,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tRq-yf-J5b">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" id="tRq-yf-J5b">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tRq-yf-J5b" id="ULl-vZ-pgG">
@@ -230,11 +263,11 @@
                     <navigationItem key="navigationItem" title="Settings" id="8GT-Od-wqE">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="0uU-dQ-hNG">
                             <color key="tintColor" red="0.062745098039215685" green="0.47058823529411764" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="donePressed:" destination="P4P-ef-Nuq" id="qmM-K3-Fig"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="ZM0-dI-SAO" kind="presentation" identifier="settingsToJob" id="2Vj-ZN-B7b"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUw-g4-jbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,16 +428,17 @@
                     <navigationItem key="navigationItem" title="(individual)" id="DOa-GD-tGr">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="JaQ-Pl-5c2">
                             <color key="tintColor" red="0.10196078431372549" green="0.47450980392156861" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backPressed:" destination="ijd-T9-oVc" id="mgL-UO-Iqt"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Comment" image="comment" id="ZxD-yU-5wC">
+                        <barButtonItem key="rightBarButtonItem" title="NewComment" image="newComment" id="ZxD-yU-5wC">
                             <color key="tintColor" red="0.12941176470588237" green="0.47843137254901963" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="commentPressed:" destination="ijd-T9-oVc" id="X3e-6d-Ao7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="ZM0-dI-SAO" kind="presentation" identifier="individualToJob" id="MfV-2I-VlT"/>
-                        <segue destination="ZSQ-uP-JYe" kind="presentation" identifier="individualToMyList" id="1rz-l7-nMB"/>
-                        <segue destination="0PJ-Gt-JPu" kind="presentation" identifier="individualToStatus" id="1R7-d7-XDC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJq-vP-ufO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,7 +455,7 @@
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
-                            <color key="textColor" red="0.27843137254901962" green="0.3411764705882353" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.28235294117647058" green="0.3411764705882353" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -458,17 +492,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="comment" width="25" height="25"/>
         <image name="gear" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="jobs" width="25" height="25"/>
         <image name="myList" width="25" height="25"/>
+        <image name="newComment" width="25" height="25"/>
         <image name="status" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j90-G4-ERY"/>
-        <segue reference="tAU-aA-icl"/>
-        <segue reference="1rz-l7-nMB"/>
-        <segue reference="1R7-d7-XDC"/>
+        <segue reference="B0A-xL-sGi"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,5 +1,5 @@
 //
-//  HM_JobsTableViewController.swift
+//  RC_SpecificJobTableViewController.swift
 //  SmashMobile_v3
 //
 //  Created by Marianne Kenney on 6/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
+class RC_SpecificJobTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -23,12 +23,12 @@ class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "jobsCell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "jobCell")
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "jobsToJob", sender: self)
+        self.performSegue(withIdentifier: "jobToIndividual", sender: self)
     }
     
     //SearchBar
@@ -45,4 +45,20 @@ class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
         self.searchBar.endEditing(true)
     }
     
+    //NavigationItems
+    @IBAction func backPressed(_ sender: Any) {
+        back()
+    }
+    
+    @IBAction func settingsPressed(_ sender: Any) {
+        settings()
+    }
+    
+    func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func settings() {
+        self.performSegue(withIdentifier: "jobToSettings", sender: self)
+    }
 }

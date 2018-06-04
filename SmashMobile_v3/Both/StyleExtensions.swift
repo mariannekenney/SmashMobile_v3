@@ -30,4 +30,30 @@ extension UIColor {
         static let warning = UIColor(red: 255, green: 178, blue: 60)
         static let danger = UIColor(red: 216, green: 75, blue: 60)
     }
+    
+    struct TextColors {
+        static let light = UIColor(red: 72, green: 87, blue: 93)
+        static let dark = UIColor(red: 10, green: 29, blue: 38)
+    }
+}
+
+extension UISearchBar {
+    func setFont() {
+        self.tintColor = UIColor.MainColors.secondary
+        self.barTintColor = UIColor.MainColors.secondary
+        for view : UIView in (self.subviews[0]).subviews {
+            if let textField = view as? UITextField {
+                textField.font = UIFont(name: "SourceSansPro-Regular", size: 17.0)
+                textField.textColor = UIColor.TextColors.dark
+            }
+        }
+    }
+}
+
+extension UIViewController {
+    func errorAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }

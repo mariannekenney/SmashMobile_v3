@@ -1,5 +1,5 @@
 //
-//  HM_JobsTableViewController.swift
+//  RC_StatusTableViewController.swift
 //  SmashMobile_v3
 //
 //  Created by Marianne Kenney on 6/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
+class RC_StatusTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -23,12 +23,12 @@ class HM_JobsTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "jobsCell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "statusCell")
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "jobsToJob", sender: self)
+        self.performSegue(withIdentifier: "statusToIndividual", sender: self)
     }
     
     //SearchBar

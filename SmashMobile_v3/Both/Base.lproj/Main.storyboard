@@ -18,7 +18,7 @@
         <!--Log In View Controller-->
         <scene sceneID="vcQ-hm-ZC7">
             <objects>
-                <viewController id="So5-7h-0wh" customClass="LogInViewController" customModule="SmashMobile_v3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerID" id="So5-7h-0wh" customClass="LogInViewController" customModule="SmashMobile_v3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L4l-bh-wNS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="k7x-xd-YDj">
                                 <rect key="frame" x="16" y="168" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.0078431372549019607" green="0.18431372549019609" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.039215686274509803" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
@@ -51,7 +51,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="logIn:" destination="So5-7h-0wh" eventType="touchUpInside" id="YUQ-wO-JCf"/>
+                                    <action selector="logInPressed:" destination="So5-7h-0wh" eventType="touchUpInside" id="WKQ-xC-80W"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hNL-Xy-jbx">
@@ -74,7 +74,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="forgotPassword:" destination="So5-7h-0wh" eventType="touchUpInside" id="Ybn-z9-ccd"/>
+                                    <action selector="forgotPasswordPressed:" destination="So5-7h-0wh" eventType="touchUpInside" id="jwv-bD-CZS"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfLogoLight" translatesAutoresizingMaskIntoConstraints="NO" id="goN-vZ-KuD">
@@ -96,6 +96,7 @@
                     <connections>
                         <outlet property="email" destination="k7x-xd-YDj" id="J1L-SE-3TH"/>
                         <outlet property="password" destination="H0t-bz-uAk" id="oAh-iU-4Ce"/>
+                        <outlet property="staySwitch" destination="hNL-Xy-jbx" id="SYY-Jr-nBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToK-jb-4ht" userLabel="First Responder" sceneMemberID="firstResponder"/>

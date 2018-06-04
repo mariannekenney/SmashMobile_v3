@@ -1,5 +1,5 @@
 //
-//  HM_IndividualViewController.swift
+//  RC_IndividualViewController.swift
 //  SmashMobile_v3
 //
 //  Created by Marianne Kenney on 6/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HM_IndividualViewController: UIViewController {
+class RC_IndividualViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,3 +31,4 @@ class HM_IndividualViewController: UIViewController {
         return
     }
 }
+

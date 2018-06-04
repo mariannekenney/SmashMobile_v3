@@ -24,6 +24,12 @@
 		05A23A0620C599A3001ABC6D /* HM_MyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0520C599A3001ABC6D /* HM_MyListTableViewController.swift */; };
 		05A23A0820C599BB001ABC6D /* HM_StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0720C599BB001ABC6D /* HM_StatusTableViewController.swift */; };
 		05A23A0A20C599C7001ABC6D /* HM_SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0920C599C7001ABC6D /* HM_SettingsTableViewController.swift */; };
+		05A23A0C20C5B977001ABC6D /* RC_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0B20C5B977001ABC6D /* RC_HomeViewController.swift */; };
+		05A23A0E20C5B986001ABC6D /* RC_JobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0D20C5B986001ABC6D /* RC_JobsTableViewController.swift */; };
+		05A23A1020C5B996001ABC6D /* RC_SpecificJobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A0F20C5B996001ABC6D /* RC_SpecificJobTableViewController.swift */; };
+		05A23A1220C5B9A0001ABC6D /* RC_SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A1120C5B9A0001ABC6D /* RC_SettingsTableViewController.swift */; };
+		05A23A1420C5B9AD001ABC6D /* RC_IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A1320C5B9AD001ABC6D /* RC_IndividualViewController.swift */; };
+		05A23A1620C5B9BA001ABC6D /* RC_StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A23A1520C5B9BA001ABC6D /* RC_StatusTableViewController.swift */; };
 		05CB207C20C1B86C00113B34 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207020C1B86A00113B34 /* SourceSansPro-LightItalic.ttf */; };
 		05CB207D20C1B86C00113B34 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207120C1B86A00113B34 /* SourceSansPro-BoldItalic.ttf */; };
 		05CB207E20C1B86C00113B34 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207220C1B86A00113B34 /* SourceSansPro-ExtraLight.ttf */; };
@@ -79,6 +85,12 @@
 		05A23A0520C599A3001ABC6D /* HM_MyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HM_MyListTableViewController.swift; sourceTree = "<group>"; };
 		05A23A0720C599BB001ABC6D /* HM_StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HM_StatusTableViewController.swift; sourceTree = "<group>"; };
 		05A23A0920C599C7001ABC6D /* HM_SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HM_SettingsTableViewController.swift; sourceTree = "<group>"; };
+		05A23A0B20C5B977001ABC6D /* RC_HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_HomeViewController.swift; sourceTree = "<group>"; };
+		05A23A0D20C5B986001ABC6D /* RC_JobsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_JobsTableViewController.swift; sourceTree = "<group>"; };
+		05A23A0F20C5B996001ABC6D /* RC_SpecificJobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_SpecificJobTableViewController.swift; sourceTree = "<group>"; };
+		05A23A1120C5B9A0001ABC6D /* RC_SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_SettingsTableViewController.swift; sourceTree = "<group>"; };
+		05A23A1320C5B9AD001ABC6D /* RC_IndividualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_IndividualViewController.swift; sourceTree = "<group>"; };
+		05A23A1520C5B9BA001ABC6D /* RC_StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_StatusTableViewController.swift; sourceTree = "<group>"; };
 		05CB207020C1B86A00113B34 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-LightItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
 		05CB207120C1B86A00113B34 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BoldItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 		05CB207220C1B86A00113B34 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLight.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -189,6 +201,12 @@
 			isa = PBXGroup;
 			children = (
 				0529B23320C1A3C200E2DEA7 /* Recruiter.storyboard */,
+				05A23A1320C5B9AD001ABC6D /* RC_IndividualViewController.swift */,
+				05A23A0B20C5B977001ABC6D /* RC_HomeViewController.swift */,
+				05A23A0D20C5B986001ABC6D /* RC_JobsTableViewController.swift */,
+				05A23A0F20C5B996001ABC6D /* RC_SpecificJobTableViewController.swift */,
+				05A23A1120C5B9A0001ABC6D /* RC_SettingsTableViewController.swift */,
+				05A23A1520C5B9BA001ABC6D /* RC_StatusTableViewController.swift */,
 			);
 			path = Recruiter;
 			sourceTree = "<group>";
@@ -368,16 +386,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A23A0E20C5B986001ABC6D /* RC_JobsTableViewController.swift in Sources */,
+				05A23A1220C5B9A0001ABC6D /* RC_SettingsTableViewController.swift in Sources */,
 				0575A31320C1A2210084D77A /* LogInViewController.swift in Sources */,
 				0575A2E320C1A1BB0084D77A /* AppDelegate.swift in Sources */,
 				05A23A0620C599A3001ABC6D /* HM_MyListTableViewController.swift in Sources */,
 				05A239FE20C5992A001ABC6D /* HM_HomeViewController.swift in Sources */,
 				05A23A0820C599BB001ABC6D /* HM_StatusTableViewController.swift in Sources */,
 				05A239FC20C5911D001ABC6D /* StyleExtensions.swift in Sources */,
+				05A23A1020C5B996001ABC6D /* RC_SpecificJobTableViewController.swift in Sources */,
 				05A23A0A20C599C7001ABC6D /* HM_SettingsTableViewController.swift in Sources */,
 				05A23A0220C59952001ABC6D /* HM_SpecificJobTableViewController.swift in Sources */,
 				05A23A0020C59942001ABC6D /* HM_JobsTableViewController.swift in Sources */,
+				05A23A1620C5B9BA001ABC6D /* RC_StatusTableViewController.swift in Sources */,
 				05A23A0420C59969001ABC6D /* HM_IndividualViewController.swift in Sources */,
+				05A23A1420C5B9AD001ABC6D /* RC_IndividualViewController.swift in Sources */,
+				05A23A0C20C5B977001ABC6D /* RC_HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
