@@ -16,7 +16,7 @@ extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
     
-    struct MainStyle {
+    struct MainColors {
         static let primary = UIColor(red: 0, green: 119, blue: 162)
         static let secondary = UIColor(red: 181, green: 209, blue: 75)
         static let dark = UIColor(red: 20, green: 54, blue: 80)
