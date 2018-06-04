@@ -10,6 +10,10 @@ import UIKit
 
 class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var favorites: UIBarButtonItem!
+    @IBOutlet weak var no: UIBarButtonItem!
+    @IBOutlet weak var yes: UIBarButtonItem!
+    @IBOutlet weak var new: UIBarButtonItem!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
@@ -35,6 +39,7 @@ class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDeleg
     func setUpSearchBar() {
         searchBar.delegate = self
         searchBar.setFont()
+        self.tableView.setContentOffset(CGPoint(x: 0, y: searchBar.frame.size.height), animated: false)
     }
     
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -43,6 +48,34 @@ class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDeleg
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchBar.endEditing(true)
+    }
+    
+    //Toolbar
+    @IBAction func newPressed(_ sender: UIBarButtonItem) {
+        removeAllStyle()
+        new.style = .done
+    }
+    
+    @IBAction func yesPressed(_ sender: Any) {
+        removeAllStyle()
+        yes.style = .done
+    }
+    
+    @IBAction func noPressed(_ sender: Any) {
+        removeAllStyle()
+        no.style = .done
+    }
+    
+    @IBAction func favoritesPressed(_ sender: Any) {
+        removeAllStyle()
+        favorites.style = .done
+    }
+    
+    func removeAllStyle() {
+        new.style = .plain
+        yes.style = .plain
+        no.style = .plain
+        favorites.style = .plain
     }
     
     //NavigationItems

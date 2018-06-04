@@ -10,6 +10,10 @@ import UIKit
 
 class HM_SettingsTableViewController: UITableViewController {
     
+    @IBOutlet weak var stillOpen: UISwitch!
+    @IBOutlet weak var pushNotifications: UISwitch!
+    @IBOutlet weak var recruiterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

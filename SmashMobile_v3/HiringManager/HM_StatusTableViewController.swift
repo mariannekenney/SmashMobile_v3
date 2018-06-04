@@ -35,6 +35,7 @@ class HM_StatusTableViewController: UITableViewController, UISearchBarDelegate {
     func setUpSearchBar() {
         searchBar.delegate = self
         searchBar.setFont()
+        self.tableView.setContentOffset(CGPoint(x: 0, y: searchBar.frame.size.height), animated: false)
     }
     
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
