@@ -43,7 +43,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.46666666666666667" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -77,7 +77,7 @@
                                     <action selector="forgotPassword:" destination="So5-7h-0wh" eventType="touchUpInside" id="Ybn-z9-ccd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fullLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="goN-vZ-KuD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfLogoLight" translatesAutoresizingMaskIntoConstraints="NO" id="goN-vZ-KuD">
                                 <rect key="frame" x="16" y="46" width="343" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -104,6 +104,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fullLogo2" width="1814" height="518"/>
+        <image name="sfLogoLight" width="1814" height="518"/>
     </resources>
 </document>

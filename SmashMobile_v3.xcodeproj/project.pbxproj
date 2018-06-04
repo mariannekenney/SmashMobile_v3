@@ -16,6 +16,7 @@
 		0575A2F820C1A1BD0084D77A /* SmashMobile_v3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A2F720C1A1BD0084D77A /* SmashMobile_v3Tests.swift */; };
 		0575A30320C1A1BD0084D77A /* SmashMobile_v3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A30220C1A1BD0084D77A /* SmashMobile_v3UITests.swift */; };
 		0575A31320C1A2210084D77A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575A31220C1A2210084D77A /* LogInViewController.swift */; };
+		05A239FC20C5911D001ABC6D /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A239FB20C5911D001ABC6D /* StyleExtensions.swift */; };
 		05CB207C20C1B86C00113B34 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207020C1B86A00113B34 /* SourceSansPro-LightItalic.ttf */; };
 		05CB207D20C1B86C00113B34 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207120C1B86A00113B34 /* SourceSansPro-BoldItalic.ttf */; };
 		05CB207E20C1B86C00113B34 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CB207220C1B86A00113B34 /* SourceSansPro-ExtraLight.ttf */; };
@@ -63,6 +64,7 @@
 		0575A30220C1A1BD0084D77A /* SmashMobile_v3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashMobile_v3UITests.swift; sourceTree = "<group>"; };
 		0575A30420C1A1BD0084D77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0575A31220C1A2210084D77A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		05A239FB20C5911D001ABC6D /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		05CB207020C1B86A00113B34 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-LightItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
 		05CB207120C1B86A00113B34 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BoldItalic.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 		05CB207220C1B86A00113B34 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLight.ttf"; path = "../../../../../Downloads/source-sans-pro/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -129,8 +131,8 @@
 				0575A2E920C1A1BD0084D77A /* Assets.xcassets */,
 				0575A2EE20C1A1BD0084D77A /* Info.plist */,
 				0575A31420C1A2250084D77A /* Both */,
-				0575A31120C1A1D80084D77A /* Recruiter */,
 				0575A31020C1A1D00084D77A /* HiringManager */,
+				0575A31120C1A1D80084D77A /* Recruiter */,
 				05CB206F20C1B83E00113B34 /* fonts */,
 			);
 			path = SmashMobile_v3;
@@ -176,6 +178,7 @@
 				0575A2E620C1A1BB0084D77A /* Main.storyboard */,
 				0575A2EB20C1A1BD0084D77A /* LaunchScreen.storyboard */,
 				0575A31220C1A2210084D77A /* LogInViewController.swift */,
+				05A239FB20C5911D001ABC6D /* StyleExtensions.swift */,
 			);
 			path = Both;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				0575A31320C1A2210084D77A /* LogInViewController.swift in Sources */,
 				0575A2E320C1A1BB0084D77A /* AppDelegate.swift in Sources */,
+				05A239FC20C5911D001ABC6D /* StyleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
