@@ -8,6 +8,69 @@
 
 import UIKit
 
+class HM_SpecificJobTableViewCell: UITableViewCell {
+    @IBOutlet weak var starButton: UIButton!
+    @IBOutlet weak var textInfo: UITextView!
+    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var mainView: UIView!
+    
+    @IBAction func starPresed(_ sender: Any) {
+        star()
+    }
+    
+    @IBAction func leftPressed(_ sender: Any) {
+        left()
+    }
+    
+    @IBAction func rightPressed(_ sender: Any) {
+        right()
+    }
+    
+    func left() {
+        print("Left")
+    }
+    
+    func right() {
+        print("Right")
+    }
+    
+    func star() {
+        if (starButton.currentBackgroundImage == UIImage(named: "openStar")) {
+            starButton.setBackgroundImage(UIImage(named: "fullStar"), for: .normal)
+        } else {
+            starButton.setBackgroundImage(UIImage(named: "openStar"), for: .normal)
+        }
+    }
+    
+    override func awakeFromNib() {
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action:Selector(("swipe:")))
+        leftSwipe.direction = .left;
+        self.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action:Selector(("swipe:")))
+        rightSwipe.direction = .right;
+        self.mainView.addGestureRecognizer(rightSwipe)
+    }
+    
+    func swipe(sender:AnyObject) {
+        let swipeGesture:UISwipeGestureRecognizer = sender as! UISwipeGestureRecognizer
+        if(swipeGesture.direction == .left)
+        {
+            var frame:CGRect = self.mainView.frame;
+            frame.origin.x = -self.leftButton.frame.width;
+            self.mainView.frame = frame;
+        }
+        else if(swipeGesture.direction == .right)
+        {
+            var frame:CGRect = self.mainView.frame;
+            frame.origin.x = +self.rightButton.frame.width;
+            self.mainView.frame = frame;
+        }
+        
+    }
+}
+
 class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var favorites: UIBarButtonItem!
@@ -23,11 +86,13 @@ class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDeleg
     
     //TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "jobCell")
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> HM_SpecificJobTableViewCell {
+        let cell = HM_SpecificJobTableViewCell(style: .default, reuseIdentifier: "jobCell")
+        
+        
         return cell
     }
     
@@ -38,7 +103,7 @@ class HM_SpecificJobTableViewController: UITableViewController, UISearchBarDeleg
     //SearchBar
     func setUpSearchBar() {
         searchBar.delegate = self
-        searchBar.setFont()
+        searchBar.setStyle()
         self.tableView.setContentOffset(CGPoint(x: 0, y: searchBar.frame.size.height), animated: false)
     }
     

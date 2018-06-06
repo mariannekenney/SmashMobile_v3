@@ -56,9 +56,9 @@ class LogInViewController: UIViewController {
     //Switch
     func handleSwitch() {
         if (staySwitch.isOn) {
-            
+            print("SwitchOn")
         } else {
-            
+            print("SwitchOff")
         }
     }
     
@@ -68,7 +68,7 @@ class LogInViewController: UIViewController {
     }
     
     func forgotPassword() {
-        
+        print("ForgotPassword")
     }
     
     

@@ -28,7 +28,7 @@ class RC_IndividualViewController: UIViewController {
     }
     
     func comment() {
-        return
+        print("Comment")
     }
 }
 

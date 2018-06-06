@@ -10,8 +10,57 @@ import UIKit
 
 class HM_IndividualViewController: UIViewController {
     
+    @IBOutlet weak var decisionSegment: UISegmentedControl!
+    @IBOutlet weak var starButton: UIButton!
+    @IBOutlet weak var text: UITextView!
+    
+    var labels: [UILabel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpInfo()
+    }
+    
+    //InfoSetUp
+    func setUpInfo() {
+        
+    }
+    
+    //Buttons
+    @IBAction func starPressed(_ sender: Any) {
+        star()
+    }
+    
+    @IBAction func takeActionPressed(_ sender: Any) {
+        takeAction()
+    }
+    
+    @IBAction func statusLogPressed(_ sender: Any) {
+        statusLog()
+    }
+    
+    @IBAction func viewResumePressed(_ sender: Any) {
+        viewResume()
+    }
+    
+    func star() {
+        if (starButton.currentBackgroundImage == UIImage(named: "openStar")) {
+            starButton.setBackgroundImage(UIImage(named: "fullStar"), for: .normal)
+        } else {
+            starButton.setBackgroundImage(UIImage(named: "openStar"), for: .normal)
+        }
+    }
+    
+    func takeAction() {
+        print("TakeAction")
+    }
+    
+    func statusLog() {
+        print("StatusLog")
+    }
+    
+    func viewResume() {
+        print("ViewResume")
     }
     
     //NavigationItems
@@ -28,6 +77,6 @@ class HM_IndividualViewController: UIViewController {
     }
     
     func comment() {
-        return
+        print("Comment")
     }
 }

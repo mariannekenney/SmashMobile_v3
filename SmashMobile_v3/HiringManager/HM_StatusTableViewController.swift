@@ -34,7 +34,7 @@ class HM_StatusTableViewController: UITableViewController, UISearchBarDelegate {
     //SearchBar
     func setUpSearchBar() {
         searchBar.delegate = self
-        searchBar.setFont()
+        searchBar.setStyle()
         self.tableView.setContentOffset(CGPoint(x: 0, y: searchBar.frame.size.height), animated: false)
     }
     
